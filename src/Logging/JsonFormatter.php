@@ -35,6 +35,7 @@ class JsonFormatter extends BaseJsonFormatter
     private function logTransform(array $record)
     {
         // 这个就是最终要记录的数组
+        $record['context']['message'] = $record['message'];
         $newRecord = [
             'log_time'  => $record['datetime']->format('Y-m-d H:i:s'),
             'message'   => strlen($record['message']) < self::EXCEPTION_LEN ? $record['message'] : 'exception', //捕获异常情况日志logTag
