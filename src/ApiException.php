@@ -8,7 +8,7 @@ class ApiException extends Exception
 {
     use Response;
 
-    protected $data; //用来装数据
+    public $data; //用来装数据
 
     /**
      * 构造返回给前端的api的异常
