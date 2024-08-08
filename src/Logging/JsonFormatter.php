@@ -12,7 +12,7 @@ class JsonFormatter extends BaseJsonFormatter
     /**
      * 字符限定异常的长度
      */
-    const EXCEPTION_LEN = 50;
+    const EXCEPTION_LEN = 100;
 
     /**
      * 重写格式化日志方法
